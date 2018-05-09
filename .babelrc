@@ -1,0 +1,4 @@
+{
+  "presets": ["env", "react"],
+  "plugins": [["antd"],"transform-runtime", "transform-decorators-legacy","react-hot-loader/babel"]
+}
