@@ -27,7 +27,7 @@ module.exports = {
     hot:true,
     proxy: {
       "*": {
-        target: "http://localhost:88",
+        target: "http://localhost:8080/api",
       }
     },
   },
@@ -40,7 +40,7 @@ module.exports = {
         loader: "style-loader!css-loader!postcss-loader"
       },
       {
-        test:/\.jsx?$/,
+        test:/\.js?$/,
         exclude: path.resolve(__dirname, "node_modules"),
         loader: 'babel-loader'
       },

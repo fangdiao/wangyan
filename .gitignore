@@ -1,3 +1,5 @@
 node_modules
-package-lock.json
 dist
+.DB_store
+.idea
+package-lock.json
