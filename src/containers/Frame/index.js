@@ -1,20 +1,33 @@
 import React from 'react';
+import zhCN from 'antd/lib/locale-provider/zh_CN';
+import { withRouter } from "react-router-dom";
+import moment from 'moment';
+import 'moment/locale/zh-cn';
+import { message } from 'antd';
 
-import { connect } from 'utils/helper';
-import userActions from 'actions/user';
+import Header from './Header';
+
+import 'layouts/less/common.less';
+
+moment.locale('zh-cn');
+
+message.config({
+  top: 60,
+  duration: 2,
+  maxCount: 3
+});
 
 class Frame extends React.Component {
 
-  async componentDidMount () {
-    const { siginIn } = this.props.actions;
-    const data = await siginIn({ name: '01' });
-    console.log(this.props);
+  componentDidMount () {
+    const user = localStorage.getItem('wangyan');
+    !user && this.props.history.push('/sign');
   }
 
   render() {
     return (
-      <div>1111</div>
+      <Header />
     )
   }
 }
-export default connect(state => state.user, userActions)(Frame);
+export default withRouter(Frame);

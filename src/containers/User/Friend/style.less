@@ -1,0 +1,80 @@
+
+@import "../../../layouts/less/common";
+
+.friend {
+  display: flex;
+  flex-wrap: wrap;
+  .item {
+    width: 42px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    &:nth-child(4n+4) {
+      margin-right: 0 !important;
+    }
+  }
+
+  :global {
+    .ant-avatar-lg {
+      width: 42px;
+      height: 42px;
+    }
+  }
+}
+
+
+.popover {
+  width: 150px;
+
+  .popover-header {
+    display: flex;
+    width: 100%;
+    .opover-img {
+      width: 30px;
+    }
+    > span {
+      font-size: 18px;
+      font-weight: bolder;
+      width: 110px;
+      line-height: 34px;
+      margin-left: 10px;
+      .ellipsis();
+    }
+  }
+
+  > p {
+    margin: 0;
+  }
+
+  .school, .motto {
+    display: flex;
+    align-items:flex-start;
+    font-size: 14px;
+    margin-top: 6px;
+    > span:first-child {
+      text-align: right;
+      width: 50px;
+      color: @homeBlue;
+    }
+
+    > span:last-child {
+      width: 90px;
+      margin-left: 10px;
+    }
+  }
+
+  .add-friend {
+    margin-top:10px;
+    :global {
+      .ant-btn-primary {
+        width: 100%;
+      }
+    }
+  }
+  :global {
+    .ant-btn-danger {
+      margin-top: 6px;
+      width: 100%;
+    }
+  }
+}

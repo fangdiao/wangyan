@@ -1,0 +1,67 @@
+
+
+.message {
+
+  .curd {
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 35px rgba(200,200,200,0.4);
+    transition: all .2s;
+    padding: 10px;
+    border-radius: 5px;
+    &:hover {
+      box-shadow: 0px 0px 5px rgba(200,200,200,.4);
+    }
+
+    .comment {
+      margin: 0;
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      > span {
+        > span {
+          margin-right: 10px;
+        }
+        > span:first-child {
+          cursor: pointer;
+          color: #2F77F1;
+        }
+      }
+
+      > span:last-child {
+        cursor: pointer;
+        color: #2F77F1;
+      }
+    }
+
+    .friend {
+      margin: 0;
+      > span:first-child {
+        margin-right: 10px;
+        cursor: pointer;
+        color: #2F77F1;
+      }
+    }
+
+    > div {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      > span {
+        > span:first-child {
+          cursor: pointer;
+          color: #2F77F1;
+          margin-right: 10px;
+        }
+      }
+
+
+      button {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.agree {
+  color: #2F77F1;
+}

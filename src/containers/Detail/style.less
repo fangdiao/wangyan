@@ -1,0 +1,73 @@
+
+.wrapper {
+  background-color: #f6f6f6;
+}
+
+.detail {
+  display: flex;
+  align-items:flex-start;
+  width: 840px;
+  margin: 0 auto;
+  padding: 10px;
+
+  .info {
+    padding: 10px;
+    border-radius: 4px;
+    width: 220px;
+    box-shadow: 0 1px 3px rgba(26,26,26,.1);
+    background-color: #ffffff;
+
+    .img {
+      width: 100%;
+      > img {
+        width: 100%;
+      }
+    }
+
+    .name {
+      font-weight: bold;
+    }
+
+    > p {
+      margin-top: 10px;
+      display: flex;
+      align-items:flex-start;
+
+      > span:first-child {
+        width: 50px;
+        text-align: right;
+        color: #2F77F1;
+      }
+      > span:last-child {
+        width: 130px;
+        font-size: 16px;
+        margin-left: 10px;
+
+      }
+    }
+  }
+
+  .release {
+    margin-left: 10px;
+    .item {
+      border-radius: 4px;
+      padding: 20px;
+      box-shadow: 0 1px 3px rgba(26,26,26,.1);
+      background-color: #ffffff;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.add-friend {
+  margin-top:10px;
+  :global {
+    .ant-btn-primary {
+      width: 100%;
+    }
+  }
+}
+.is-friend {
+  margin-top: 6px;
+  color: #2F77F1;
+}

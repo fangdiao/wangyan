@@ -1,0 +1,172 @@
+
+@import "../../../layouts/less/common.less";
+
+.item-content {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 3px;
+
+  .author {
+    text-align: center;
+    width: 60px;
+    cursor: pointer;
+
+    > p {
+      font-size: 12px;
+      color: #888;
+      margin-top: 6px;
+    }
+  }
+
+  .content {
+    font-size: 14px;
+    width: 500px;
+    margin-left: 10px;
+  }
+  .img-content {
+    display: flex;
+    flex-wrap: wrap;
+    > div {
+      position: relative;
+      width: 154px;
+      height: 154px;
+      cursor: pointer;
+      background-color: #f6f6f6;
+      margin-left: 6px;
+      margin-top: 6px;
+      &:nth-child(3n+1) {
+        margin-left: 0 !important;
+      }
+      > img {
+        .contain-image;
+      }
+    }
+  }
+
+  .like {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    > span {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+      &:last-child {
+        margin-left: 60px;
+      }
+    }
+  }
+
+  .like-people {
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    > span {
+      margin-left: 9px;
+    }
+  }
+
+  .comment-people {
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    > div {
+      display: flex;
+      margin-bottom: 16px;
+    }
+    .comment-img {
+      width: 50px;
+      text-align: center;
+      > p {
+        margin-top: 6px;
+        font-size: 12px;
+      }
+    }
+
+    .comment-content {
+      width: 410px;
+      font-size: 13px;
+      margin-left: 20px;
+      > span {
+        display: inline;
+      }
+      > span:first-child {
+        color: @homeBlue;
+      }
+    }
+  }
+
+  .comment {
+    display: flex;
+    overflow: hidden;
+    .input {
+      margin-top: 10px;
+      width: 400px;
+    }
+    .button {
+      margin-top: 10px;
+      width: 70px;
+      margin-left: 10px;
+    }
+  }
+}
+
+.popover {
+  width: 150px;
+
+  .popover-header {
+    display: flex;
+    width: 100%;
+    .opover-img {
+      width: 30px;
+    }
+    > span {
+      font-size: 18px;
+      font-weight: bolder;
+      width: 110px;
+      line-height: 34px;
+      margin-left: 10px;
+      cursor: pointer;
+      color: @homeBlue;
+      .ellipsis();
+    }
+  }
+
+  > p {
+    margin: 0;
+  }
+
+  .school, .motto {
+    display: flex;
+    align-items:flex-start;
+    font-size: 14px;
+    margin-top: 6px;
+    > span:first-child {
+      text-align: right;
+      width: 50px;
+      color: @homeBlue;
+    }
+
+    > span:last-child {
+      width: 90px;
+      margin-left: 10px;
+    }
+  }
+
+  .add-friend {
+    margin-top:10px;
+    :global {
+      .ant-btn-primary {
+        width: 100%;
+      }
+    }
+  }
+  .is-friend {
+    margin-top: 6px;
+    color: @homeBlue;
+  }
+}
+
+.modal {
+  width: 800px !important;
+}

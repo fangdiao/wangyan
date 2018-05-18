@@ -1,0 +1,61 @@
+@import '~antd/lib/style/mixins/index.less';
+
+
+.full-image() {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.contain-image() {
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ellipsis() {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.multiple-ellipsis(@line, @maxHeight: 14px * @line) {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: @line;
+  /* autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
+  max-height: @maxHeight;
+}
+
+.linear-gradient-opacity(@startColor, @endColor, @alpha:1, @direction:to bottom) {
+  // background:@endColor;
+  filter: e(%("progid:DXImageTransform.Microsoft.Gradient(StartColorStr='%d', EndColorStr='%d') progid:DXImageTransform.Microsoft.Alpha(opacity=%d)", argb(@startColor), argb(@endColor), @alpha*100));
+  background: url(about:blank);
+  background: linear-gradient(@direction, @startColor, @endColor);
+  background: -moz-linear-gradient(@direction, @startColor, @endColor);
+  background: -webkit-linear-gradient(@direction, @startColor, @endColor);
+  background: -o-linear-gradient(@direction, @startColor, @endColor);
+  opacity: @alpha;
+}
+
+.transform(@translate) {
+  -webkit-transform: @translate;
+  -moz-transform: @translate;
+  -ms-transform: @translate;
+  -o-transform: @translate;
+  transform: @translate;
+}
+
+.multipe-v-center(){
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  .transform(translate3d(-50%,-50%,0));
+}

@@ -1,0 +1,38 @@
+
+.sign {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../layouts/images/sign_bg.png");
+  margin-top: 50px;
+
+  .sign-content {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 300px;
+    margin-left: -150px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 2px 20px 0 #ddd;
+    border-radius: 5px;
+
+    :global {
+      .ant-tabs {
+        width: 220px;
+        margin-left: 20px;
+      }
+      .ant-tabs-nav {
+        width: 220px;
+        div {
+          &:nth-child(2n+2) {
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+    .login-form-button {
+      width: 100%;
+    }
+  }
+}

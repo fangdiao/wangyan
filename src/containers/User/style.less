@@ -1,0 +1,48 @@
+
+.user {
+  padding-top: 10px;
+  display: flex;
+  .user-content {
+    width: 740px;
+    min-height: 800px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    box-shadow: 0 1px 10px rgba(20,20,20,.1);
+    .children {
+      padding: 20px;
+    }
+
+    :global {
+      .ant-tabs-nav-wrap {
+        width: 160px;
+        min-height: 800px;
+      }
+      .ant-tabs-tab {
+        margin: 10px 0 10px 0 !important;
+        text-align: left !important; ;
+      }
+      .ant-tabs-content {
+        padding-left: 0 !important;
+      }
+    }
+
+    .tabIcon {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      font-size: 16px;
+
+      > svg {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .friend {
+    width: 240px;
+    padding: 20px;
+    margin-left: 10px;
+    box-shadow: 0 1px 10px rgba(20,20,20,.1);
+    max-height: 300px;
+  }
+}

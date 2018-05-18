@@ -6,6 +6,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
+  mode: "development",
   resolve: {
     modules: [path.resolve(__dirname, "src"), "node_modules"],
     extensions: ['.js', '.less', '.css', '.json']
@@ -20,14 +21,15 @@ module.exports = {
     chunkFilename:"js/[name].chunk.js"     //chunk生成配置
   },
   devServer:{
-    contentBase: path.join(__dirname, "asstes"),
+    contentBase: path.join(__dirname, "dist"),
     inline:true,
     compress: true,
     port:3000,
     hot:true,
+    historyApiFallback: true,
     proxy: {
       "*": {
-        target: "http://localhost:8080/api",
+        target: "http://localhost:8080",
       }
     },
   },

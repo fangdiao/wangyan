@@ -16,6 +16,7 @@ export const connect = (dataMaker = () => {}, actions = () => {}) => Component =
 };
 
 export const request = (url, body = '', method = 'get') => {
+  url = `/api${url}`
   if (body && method === 'get') {
     url = `${url}?${qs.stringify(body)}`;
   } else if (body && method === 'post') {
@@ -43,3 +44,28 @@ export const request = (url, body = '', method = 'get') => {
     });
   });
 }
+
+export const timeFormat = timestamps => {
+  const [ sec, min, hour, day ] = [ 1, 60, 3600, 86400 ];
+  const now = Date.now();
+  const lag = parseInt((now - Number(timestamps)) / 1000);
+  let [ unit, type ] = [ '天', 0 ];
+  switch (true) {
+    case (lag < min):
+      type = sec;
+      unit = '秒';
+      break;
+    case (lag < hour):
+      type = min;
+      unit = '分钟';
+      break;
+    case (lag < day):
+      type = hour;
+      unit = '小时';
+      break;
+    default:
+      type = day;
+  };
+  const value = parseInt(lag / type);
+  return `${value}${unit}前`;
+};
