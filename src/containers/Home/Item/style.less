@@ -2,9 +2,19 @@
 @import "../../../layouts/less/common.less";
 
 .item-content {
+  position: relative;
   display: flex;
   background-color: #ffffff;
   border-radius: 3px;
+
+  //.delete-icon {
+  //  position: absolute;
+  //  cursor: pointer;
+  //  right: 0;
+  //  top: 0;
+  //  width: 20px;
+  //  height: 20px;
+  //}
 
   .author {
     text-align: center;
@@ -52,8 +62,9 @@
       width: 24px;
       height: 24px;
       cursor: pointer;
+      margin-right: 40px;
       &:last-child {
-        margin-left: 60px;
+        margin: 0 !important;
       }
     }
   }

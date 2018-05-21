@@ -91,12 +91,23 @@ export default handleActions({
     return state;
   },
   'USER_DETAIL': (state, action) => {
-  if (!action.error) {
-    const { release } = action.payload;
-    let newState = state;
-    newState = { ...newState, itemData: release };
-    return newState;
-  }
-  return state;
-},
+    if (!action.error) {
+      const { release } = action.payload;
+      let newState = state;
+      newState = { ...newState, itemData: release };
+      return newState;
+    }
+    return state;
+  },
+  'DELETE': (state, action) => {
+    if (!action.error) {
+      const { time } = action.meta;
+      let newState = state;
+      let { itemData } = newState;
+      itemData = itemData.filter(i => i.time !== time);
+      newState = { ...newState, itemData };
+      return newState;
+    }
+    return state;
+  },
 }, initialState)

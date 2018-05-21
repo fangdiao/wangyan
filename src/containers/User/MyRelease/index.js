@@ -19,7 +19,7 @@ class AboutMe extends React.Component {
     return (
       <div className={STYLE['about-me']}>{
         itemData && itemData.length ? (
-          itemData.map((i, index) => <div className={STYLE.item} key={index}><Item item={i}/></div>)
+          itemData.map((i, index) => <div className={STYLE.item} key={index}><Item isIndex={true} item={i}/></div>)
         ) : <p>暂无数据</p>
       }</div>
     )

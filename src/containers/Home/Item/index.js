@@ -1,5 +1,5 @@
 import React from 'react';
-import { Avatar, Popover, Modal, Input, Button, message } from 'antd';
+import { Avatar, Popover, Modal, Input, Button, message, Popconfirm } from 'antd';
 import { NavLink } from 'react-router-dom'
 
 import { connect, timeFormat } from 'utils/helper';
@@ -15,7 +15,8 @@ class Home extends React.Component {
     previewVisible: false,
     previewImgUrl: '',
     commentContent: '',
-    showComment: false
+    showComment: false,
+    isIndex: false
   }
 
   preview = img => {
@@ -104,9 +105,14 @@ class Home extends React.Component {
     message.success('请求已发出');
   }
 
+  delete = () => {
+    const { actions, item: { time } } = this.props;
+    actions.delete({ time });
+  }
   render() {
     const { previewVisible, previewImgUrl, commentContent, showComment } = this.state;
-    const { author, content, time, imgUrl, like, comment } = this.props.item;
+    const { author, content, time, imgUrl, like, comment, weixin, qq } = this.props.item;
+    const { isIndex } = this.props;
     const { accountNumber, friend } = this.props.data.user;
     const isLike = !!like.find(i => i === i && i.accountNumber === accountNumber);
     const popoverContent = (data, size = 'default') => (
@@ -125,6 +131,9 @@ class Home extends React.Component {
           <span>学校:</span>
           <span>{data.school}</span>
         </p>
+        {
+
+        }
         <p className={STYLE.motto}>
           <span>座右铭:</span>
           <span>{data.motto}</span>
@@ -169,6 +178,15 @@ class Home extends React.Component {
             <span onClick={this.onShowComment}>
               <Svg type="icon-tubiaozhizuomobanyihuifu-4" />
             </span>
+            {
+              isIndex ? (
+                <Popconfirm title="确定删除此动态吗?" onConfirm={this.delete} okText="确定" cancelText="取消">
+                  <span className={STYLE['delete-icon']}>
+                    <Svg type="icon-tubiaozhizuomobanyihuifu-11"/>
+                  </span>
+                </Popconfirm>
+              ) : null
+            }
           </div>
           {
             like.length ? (

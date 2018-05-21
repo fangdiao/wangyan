@@ -17,4 +17,6 @@ export default {
   'myRelease': createAction('ABOUT_ME', reqData => request('/item/myrelease', reqData, 'post'), reqData => reqData),
   // 获取用户信息
   'userDetail': createAction('USER_DETAIL', reqData => request('/user/detail', reqData, 'get'), reqData => reqData),
+  //删除数据
+  'delete': createAction('DELETE', reqData => request('/item/delete', reqData, 'post'), reqData => reqData),
 };

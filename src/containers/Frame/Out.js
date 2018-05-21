@@ -1,5 +1,5 @@
 import React from 'react';
-import { Avatar, Menu, Dropdown } from 'antd';
+import { Avatar, Menu, Dropdown, Badge } from 'antd';
 import { NavLink, withRouter } from 'react-router-dom'
 
 import { connect } from 'utils/helper';
@@ -37,14 +37,16 @@ class Out extends React.Component {
       </Menu>
     );
 
-    const { avatar, accountNumber } = this.props.data;
+    const { avatar, accountNumber, message } = this.props.data;
     return (
       <div>
         {
           accountNumber ? (
             <div className={STYLE.out} ref="out">
               <Dropdown placement="bottomCenter" overlay={menu} trigger={['click']}>
-                <Avatar icon="user" src={avatar}/>
+                <span style={{ marginRight: 24 }}>
+                  <Badge count={message.length}><Avatar src={avatar} icon="user" /></Badge>
+                </span>
               </Dropdown>
             </div>
           ) : null

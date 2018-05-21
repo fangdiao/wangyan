@@ -44,9 +44,10 @@ class Detail extends React.Component {
   }
 
   render() {
-    const { name, avatar, motto, school, sex, friend, accountNumber } = this.state.userData;
+    const { name, avatar, motto, school, sex, friend, accountNumber, weixin, qq } = this.state.userData;
     const myAccountNumber = this.props.data.accountNumber;
     const { itemData } = this.props.data;
+    const isFriend = friend && myAccountNumber !== accountNumber && friend.find(i => i && i.accountNumber === accountNumber);
     return (
       <div className={classnames(STYLE.wrapper, {['container margin-top-large']:true})}>
         <div className="content">
@@ -74,7 +75,23 @@ class Detail extends React.Component {
                     <span>{motto}</span>
                   </p>
                   {
-                    myAccountNumber !== accountNumber && !friend.find(i => i.accountNumber === accountNumber) ? <div className={STYLE['add-friend']}>
+                    isFriend ? (
+                      <p>
+                        <span>qq:</span>
+                        <span>{qq}</span>
+                      </p>
+                    ) : null
+                  }
+                  {
+                    isFriend ? (
+                      <p>
+                        <span>微信:</span>
+                        <span>{weixin}</span>
+                      </p>
+                    ) : null
+                  }
+                  {
+                    !isFriend ? <div className={STYLE['add-friend']}>
                       <Button type="primary" onClick={this.addFriendMessage}>加好友</Button>
                     </div> : (friend.find(i => i.accountNumber === myAccountNumber) ? <p className={STYLE['is-friend']}>你们已经是好友了</p> : null)
                   }
