@@ -47,7 +47,7 @@ class Detail extends React.Component {
     const { name, avatar, motto, school, sex, friend, accountNumber, weixin, qq } = this.state.userData;
     const myAccountNumber = this.props.data.accountNumber;
     const { itemData } = this.props.data;
-    const isFriend = friend && myAccountNumber !== accountNumber && friend.find(i => i && i.accountNumber === accountNumber);
+    const isFriend = friend && myAccountNumber !== accountNumber && friend.find(i => i && i.accountNumber === myAccountNumber);
     return (
       <div className={classnames(STYLE.wrapper, {['container margin-top-large']:true})}>
         <div className="content">

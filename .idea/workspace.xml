@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9834640-b886-4f07-b2a2-8192514fc52b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../wangyan-server/src/controllers/item.js" afterPath="$PROJECT_DIR$/../wangyan-server/src/controllers/item.js" />
-      <change beforePath="$PROJECT_DIR$/../wangyan-server/src/data/item.js" afterPath="$PROJECT_DIR$/../wangyan-server/src/data/item.js" />
-      <change beforePath="$PROJECT_DIR$/../wangyan-server/src/routes/index.js" afterPath="$PROJECT_DIR$/../wangyan-server/src/routes/index.js" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/actions/home.js" afterPath="$PROJECT_DIR$/src/actions/home.js" />
       <change beforePath="$PROJECT_DIR$/src/containers/Detail/index.js" afterPath="$PROJECT_DIR$/src/containers/Detail/index.js" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Frame/Out.js" afterPath="$PROJECT_DIR$/src/containers/Frame/Out.js" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Home/Item/index.js" afterPath="$PROJECT_DIR$/src/containers/Home/Item/index.js" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Home/Item/style.less" afterPath="$PROJECT_DIR$/src/containers/Home/Item/style.less" />
-      <change beforePath="$PROJECT_DIR$/src/containers/User/MyRelease/index.js" afterPath="$PROJECT_DIR$/src/containers/User/MyRelease/index.js" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/home.js" afterPath="$PROJECT_DIR$/src/reducers/home.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,21 +19,11 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/containers/Detail/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="84" column="19" lean-forward="true" selection-start-line="84" selection-start-column="19" selection-end-line="84" selection-end-column="19" />
+            <state relative-caret-position="599">
+              <caret line="49" column="125" lean-forward="false" selection-start-line="49" selection-start-column="125" selection-end-line="49" selection-end-column="125" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/containers/Detail/style.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="58" column="3" lean-forward="false" selection-start-line="58" selection-start-column="3" selection-end-line="58" selection-end-column="3" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -81,6 +61,7 @@
       <find>componentDidMount</find>
       <find>60</find>
       <find>delete</find>
+      <find>console.log</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -92,13 +73,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/containers/Sigin/index.js" />
         <option value="$PROJECT_DIR$/.babelrc" />
         <option value="$PROJECT_DIR$/src/containers/Sign/style.less" />
         <option value="$PROJECT_DIR$/src/containers/Sign/SignUp.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/containers/Sign/index.js" />
-        <option value="$PROJECT_DIR$/../wangyan-server/src/app.js" />
         <option value="$PROJECT_DIR$/webpack.dev.config.js" />
         <option value="$PROJECT_DIR$/../wangyan-server/src/controllers/items.js" />
         <option value="$PROJECT_DIR$/src/containers/Frame/Header.js" />
@@ -121,9 +100,7 @@
         <option value="$PROJECT_DIR$/src/containers/detail/index.js" />
         <option value="$PROJECT_DIR$/src/containers/User/index.js" />
         <option value="$PROJECT_DIR$/src/routes/index.js" />
-        <option value="$PROJECT_DIR$/../wangyan-server/src/data/user.js" />
         <option value="$PROJECT_DIR$/src/actions/user.js" />
-        <option value="$PROJECT_DIR$/../wangyan-server/src/controllers/user.js" />
         <option value="$PROJECT_DIR$/src/containers/Home/style.less" />
         <option value="$PROJECT_DIR$/src/containers/User/Info/index.js" />
         <option value="$PROJECT_DIR$/src/containers/User/MyRelease/style.less" />
@@ -133,15 +110,19 @@
         <option value="$PROJECT_DIR$/src/containers/Detail/style.less" />
         <option value="$PROJECT_DIR$/src/containers/User/Friend/index.js" />
         <option value="$PROJECT_DIR$/../wangyan-server/.gitignore" />
-        <option value="$PROJECT_DIR$/../wangyan-server/src/routes/index.js" />
-        <option value="$PROJECT_DIR$/../wangyan-server/src/controllers/item.js" />
-        <option value="$PROJECT_DIR$/../wangyan-server/src/data/item.js" />
         <option value="$PROJECT_DIR$/src/actions/home.js" />
         <option value="$PROJECT_DIR$/src/reducers/home.js" />
         <option value="$PROJECT_DIR$/src/containers/User/MyRelease/index.js" />
         <option value="$PROJECT_DIR$/src/containers/Home/Item/style.less" />
         <option value="$PROJECT_DIR$/src/containers/Frame/Out.js" />
         <option value="$PROJECT_DIR$/src/containers/Home/Item/index.js" />
+        <option value="$PROJECT_DIR$/../wangyan-server/src/app.js" />
+        <option value="$PROJECT_DIR$/../wangyan-server/src/index.js" />
+        <option value="$PROJECT_DIR$/../wangyan-server/src/routes/index.js" />
+        <option value="$PROJECT_DIR$/../wangyan-server/src/controllers/user.js" />
+        <option value="$PROJECT_DIR$/../wangyan-server/src/data/item.js" />
+        <option value="$PROJECT_DIR$/../wangyan-server/src/data/user.js" />
+        <option value="$PROJECT_DIR$/../wangyan-server/src/controllers/item.js" />
         <option value="$PROJECT_DIR$/src/containers/Detail/index.js" />
       </list>
     </option>
@@ -200,18 +181,6 @@
               <item name="wangyan" type="b2602c69:ProjectViewProjectNode" />
               <item name="wangyan" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="actions" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="wangyan" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wangyan" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="wangyan" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wangyan" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="containers" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -220,44 +189,6 @@
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="containers" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Detail" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="wangyan" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wangyan" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="layouts" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="wangyan" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wangyan" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="layouts" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="less" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="wangyan" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wangyan" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="layouts" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="svg" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="wangyan" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wangyan" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="reducers" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="wangyan" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wangyan" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="routes" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="wangyan" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wangyan" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="utils" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="wangyan" type="b2602c69:ProjectViewProjectNode" />
@@ -336,12 +267,12 @@
       <workItem from="1525707715260" duration="5096000" />
       <workItem from="1525877561827" duration="2962000" />
       <workItem from="1525881134769" duration="17000" />
-      <workItem from="1525881181566" duration="140528000" />
+      <workItem from="1525881181566" duration="142032000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154895000" />
+    <option name="totallyTimeSpent" value="156399000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -403,14 +334,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../wangyan-server/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="2" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -424,16 +347,6 @@
     <entry file="file://$PROJECT_DIR$/../wangyan-server/static/1526279825174.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../wangyan-server/src/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="63" lean-forward="true" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="63" />
-          <folding>
-            <element signature="e#0#22#0" expanded="false" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webpack.dev.config.js">
@@ -580,24 +493,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../wangyan-server/src/controllers/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5">
-          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#37#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../wangyan-server/src/data/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/Home/style.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -700,30 +595,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../wangyan-server/src/data/item.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="87" column="0" lean-forward="true" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../wangyan-server/src/controllers/item.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="99" column="26" lean-forward="false" selection-start-line="99" selection-start-column="20" selection-end-line="99" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../wangyan-server/src/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="48" column="51" lean-forward="false" selection-start-line="48" selection-start-column="45" selection-end-line="48" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/reducers/home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1462">
@@ -817,10 +688,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../wangyan-server/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../wangyan-server/src/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="34" column="32" lean-forward="false" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../wangyan-server/src/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="876">
+          <caret line="68" column="24" lean-forward="false" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../wangyan-server/src/controllers/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="99" column="6" lean-forward="true" selection-start-line="99" selection-start-column="6" selection-end-line="99" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../wangyan-server/src/data/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="38" column="24" lean-forward="false" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../wangyan-server/src/data/item.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="37" column="24" lean-forward="false" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../wangyan-server/src/controllers/item.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="811">
+          <caret line="110" column="26" lean-forward="false" selection-start-line="110" selection-start-column="26" selection-end-line="110" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/Detail/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="84" column="19" lean-forward="true" selection-start-line="84" selection-start-column="19" selection-end-line="84" selection-end-column="19" />
+        <state relative-caret-position="599">
+          <caret line="49" column="125" lean-forward="false" selection-start-line="49" selection-start-column="125" selection-end-line="49" selection-end-column="125" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
